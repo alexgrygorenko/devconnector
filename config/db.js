@@ -6,7 +6,7 @@ const db = config.get('mongoURI');
 const connectDB = async () => {
   try {
     // The await operator is used to wait for a Promise. It can only be used inside an async function.
-    await mongoose.connect(db, { useNewUrlParser: true });
+    await mongoose.connect(db, { useNewUrlParser: true, useCreateIndex: true });
 
     console.log('MongoDB Connected...');
   } catch (err) {
