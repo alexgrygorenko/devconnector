@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 // Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
 const UserSchema = new mongoose.Schema({
@@ -24,4 +25,4 @@ const UserSchema = new mongoose.Schema({
   }
 });
 
-module.exports = User = mongoose.model('user', UserSchema);
+module.exports = User = mongoose.model('users', UserSchema);
