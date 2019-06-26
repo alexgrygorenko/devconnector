@@ -45,7 +45,8 @@ const EditProfile = ({
       instagram: loading || !profile.social ? '' : profile.social.instagram
     });
 
-  }, [getCurrentProfile, loading, profile.bio, profile.company, profile.githubusername, profile.location, profile.skills, profile.social, profile.status, profile.website]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [getCurrentProfile, loading]);
 
   const onSubmit = e => {
     e.preventDefault();
