@@ -8,7 +8,6 @@ import ProfileItem from './ProfileItem';
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
     getProfiles();
-    // eslint-disable-next-line react-h ooks/exhaustive-deps
   }, [getProfiles]);
   return (<Fragment>
     {loading ? <Spinner /> : <Fragment>
